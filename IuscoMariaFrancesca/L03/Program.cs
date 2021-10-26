@@ -39,7 +39,7 @@ namespace L03
                 Environment.UserName,
                 CancellationToken.None,
 
-                new FileDataStore(@"F:\Facultate\Anul 4\Semestrul1\DATC\datastore",true)
+                new FileDataStore("Daimto.GoogleDrive.Auth.Store")
                 ).Result;
 
             _service = new DriveService(new Google.Apis.Services.BaseClientService.Initializer()
